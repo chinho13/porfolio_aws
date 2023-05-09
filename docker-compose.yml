@@ -52,7 +52,7 @@ services:
     build: ./nginx
     image: 149112417485.dkr.ecr.us-east-2.amazonaws.com/porfolio_aws:porfolio_aws_nginx
     volumes:
-      - static_volume:/usr/src/app/static
+      - static_volume:/usr/src/app/static:rw
     ports:
       - 8000:80
     depends_on:
